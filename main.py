@@ -27,7 +27,7 @@ app.add_middleware(
 
 
 @app.post("/group_similar_transaction", tags=["Endpoint"])
-def group_similar_transactions(mono_sec_key: str):
+def group_similar_transactions(mono_sec_key: str, account_id: str):
     url = f"https://api.withmono.com/accounts/{account_id}/transactions"
 
     headers = {
