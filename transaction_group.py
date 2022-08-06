@@ -12,7 +12,7 @@ def group_transaction(transactions_data):
     avg_day = []
     for i in groups_by_days['date_transform']:
         i = str(i)
-        avg_day.append(int(i[:-13:]))
+        avg_day.append(i[:-13:])
 
     groups_by_days.drop('date_transform', inplace=True, axis=1)
     groups_by_days['avg_num_days'] = avg_day
@@ -32,7 +32,7 @@ def group_transaction(transactions_data):
     data = dict()
 
     for i in transactions_groups['group']:
-        data['group'+str(i)] = {'average_number_of_days_between_transactions': transactions_groups['avg_num_days'][i].tolist(
-        ),  "transactions": [collate_details(i) for i in transactions_groups['_id'][i].tolist()]}
+        data['group'+str(i)] = {'average_number_of_days_between_transactions': transactions_groups['avg_num_days']
+                                [i],  "transactions": [collate_details(i) for i in transactions_groups['_id'][i]]}
 
     return data
