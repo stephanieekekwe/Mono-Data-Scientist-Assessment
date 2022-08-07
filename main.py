@@ -25,6 +25,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def root():
+    return {"message": "Welcome to Mono-Data-Scientist-Assessment"}
 
 @app.post("/group_similar_transaction", tags=["Endpoint"])
 def group_similar_transactions(mono_sec_key: str, period: str, account_id: str):
