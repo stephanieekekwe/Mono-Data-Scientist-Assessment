@@ -1,4 +1,4 @@
-# Mono-Data-Scientist-Assessment
+# Mono-Data-Scientist-Assessment.
 1. Use the provided keys below to launch Mono’s widget and pull your bank statement by calling Mono’s APIs using postman or any other test tool you are comfortable with. 
 Visit [https://docs.mono.co](https://docs.mono.co) for more information on how to implement Mono API.
 2. Build a model that compare transaction narrations and group similar transactions in a single object. e.g if i spend NGN 5000 at Shoprite on a particular date and spend NGN 10000 on a different day, both transactions should be in the same group.
