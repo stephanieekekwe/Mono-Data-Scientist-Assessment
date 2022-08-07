@@ -6,3 +6,5 @@ Visit [https://docs.mono.co](https://docs.mono.co) for more information on how t
 3. Create an endpoint that accepts an array of transactions fetched from Mono’s statement API and returns JSON response like the one below.
 
 Solution Endpoint Link https://mono-data-scientist-assessment.herokuapp.com/docs#/
+
+Model Notebook https://colab.research.google.com/drive/1-cL4d8zfcdz8PHBoNROYewmJYMgV7ZPz?usp=sharing
