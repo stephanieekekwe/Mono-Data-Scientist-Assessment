@@ -26,11 +26,6 @@ app.add_middleware(
 )
 
 
-@app.get("/")
-def root():
-    return {"Default Message": "Welcome to Mono-Data-Scientist-Assessment"}
-
-
 @app.post("/group_similar_transaction", tags=["Endpoint"])
 def group_similar_transactions(mono_sec_key: str, period: str, account_id: str):
     url = f"https://api.withmono.com/accounts/{account_id}/statement?period={period}"
